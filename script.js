@@ -11,3 +11,10 @@ $("#submit").on("click", function () {
         append("<td>" + "billed" + "</td>");
     $("tbody").append(newRow);
 });
+
+$("#clear_fields").on("click", function () {
+    $("#name_box").val('');
+    $("#role_box").val('');
+    $("#date_box").val('');
+    $("#rate_box").val('');
+});
