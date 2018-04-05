@@ -7,6 +7,7 @@ $("#submit").on("click", function () {
     rate = $("#rate_box").val().trim();
     var newRow = $("<tr>");
     newRow.append("<td>" + name + "</td>").append("<td>" + role + "</td>")
-        .append("<td>" + date + "</td>").append("<td>" + "months worked" + "</td>").append("<td>"+rate+"</td>").
-        append("<td>"+"billed"+"</td>").
-}
+        .append("<td>" + date + "</td>").append("<td>" + "months worked" + "</td>").append("<td>" + rate + "</td>").
+        append("<td>" + "billed" + "</td>");
+    $("tbody").append(newRow);
+});
